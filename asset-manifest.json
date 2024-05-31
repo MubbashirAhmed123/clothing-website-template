@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/clothing-website-template/static/css/main.dba8eab7.css",
-    "main.js": "/clothing-website-template/static/js/main.0a5df567.js",
+    "main.js": "/clothing-website-template/static/js/main.9f329cfb.js",
     "static/js/787.0823d012.chunk.js": "/clothing-website-template/static/js/787.0823d012.chunk.js",
     "static/media/wimg9.jpg": "/clothing-website-template/static/media/wimg9.e8991ef37d34279bdee1.jpg",
     "static/media/wimg7.jpg": "/clothing-website-template/static/media/wimg7.33e4c1edd18b403151be.jpg",
@@ -46,11 +46,11 @@
     "static/media/mimg4.jpeg": "/clothing-website-template/static/media/mimg4.4df8d5043d95e885246c.jpeg",
     "index.html": "/clothing-website-template/index.html",
     "main.dba8eab7.css.map": "/clothing-website-template/static/css/main.dba8eab7.css.map",
-    "main.0a5df567.js.map": "/clothing-website-template/static/js/main.0a5df567.js.map",
+    "main.9f329cfb.js.map": "/clothing-website-template/static/js/main.9f329cfb.js.map",
     "787.0823d012.chunk.js.map": "/clothing-website-template/static/js/787.0823d012.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dba8eab7.css",
-    "static/js/main.0a5df567.js"
+    "static/js/main.9f329cfb.js"
   ]
 }
