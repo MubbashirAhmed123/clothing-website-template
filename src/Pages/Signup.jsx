@@ -29,10 +29,10 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex justify-center mt-20  ">
-      <Card className="w-full max-w-sm">
+    <div className="flex justify-center mt-20">
+      <Card className="w-full max-w-sm ">
         <CardHeader color="blue-gray" className="text-center">
-          <Typography variant="h4" color="white">
+          <Typography variant="h4" color="white" >
             Sign Up
           </Typography>
         </CardHeader>

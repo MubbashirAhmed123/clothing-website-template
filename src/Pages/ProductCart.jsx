@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { increaseQty,decreaseQty } from '../store/cartReducers';
 import { Link } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
+import { RiDiscountPercentFill } from 'react-icons/ri';
 
 
 const ProductCart = () => {
@@ -18,7 +19,7 @@ const ProductCart = () => {
 
   return (
     <>
-     <Typography  variant="h3" color="blue-gray " className=' flex justify-center items-center gap-2'>
+     <Typography style={{fontFamily:'unset'}}  variant="h3" color="blue-gray " className=' flex justify-center items-center gap-2'>
        <FaShoppingCart /> Shopping Cart
       </Typography>
     {cartItems.length >0 ?<div className="container mx-auto p-4">
@@ -31,6 +32,8 @@ const ProductCart = () => {
             <img src={item.prodImg} alt="" className='h-[150px] object-contain rounded-md' />
             <Typography className='font-semibold'>{item.prodTitle}</Typography>
             <Typography className='font-semibold'>RS {item.price}.00</Typography>
+            <Typography className='font-semibold'>Size: {item.size}</Typography>
+            <Typography className='font-semibold flex items-center'>Discount: {item.price} <RiDiscountPercentFill/> </Typography>
             </div>
             <div className='mt-5 flex items-center gap-5 sm:mt-0'>
               <Button onClick={()=>dispatch(increaseQty(item.id))}>+</Button>
@@ -52,7 +55,7 @@ const ProductCart = () => {
           Checkout
         </Button>
       </div>
-    </div>:<p className='text-center mt-5 bg-red-200 p-2'>No Prodcut in the cart <Link to='/' className='font-bold'>Continue Shopping</Link> </p>}
+    </div>:<p className='text-center mt-5 bg-red-200 p-2'>No Prodcuts In The Cart <Link to='/' className='font-bold'>Continue Shopping</Link> </p>}
     </>
   );
 };

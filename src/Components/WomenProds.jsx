@@ -17,11 +17,14 @@ function WomenProds() {
                         <img src={product.prodImg} alt="" className='w-full h-full object-contain rounded-md' />
                     </CardHeader>
                     <CardBody>
-                        <Typography className='font-bold'>
+                        <Typography className='font-bold  font-[]'>
                           Title:  {product.prodTitle}
                         </Typography>
-                        <Typography className='font-semibold'>
+                        <Typography className='font-semibold  font-[]'>
                           Price:  {product.price}
+                        </Typography>
+                        <Typography className='font-semibold  font-[]'>
+                          Size:  {product.size}
                         </Typography>
                     </CardBody>
                   

@@ -3,11 +3,13 @@ import Nav from '../Components/Nav'
 import Header from '../Components/Header'
 import NewArrivals from '../Components/NewArrivals'
 import Products from './Products'
+import Footer from '../Components/Footer'
 
 function Home() {
   return (
-    <div>
-  <Header/>
+    <div className=' font-[]'>
+      <Header />
+      <Footer/>
     </div>
   )
 }

@@ -60,7 +60,8 @@ const productsData=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
-        category:['new arrivals','featured','specials']
+        category:['new arrivals','featured','specials'],
+        size:'XL'
     },
     {
         id:2,
@@ -68,7 +69,8 @@ const productsData=[
         qty:1,
         prodTitle:'X Y Z',
         price:700 ,
-        category:['new arrivals','specials']
+        category:['new arrivals','specials'],
+        size:'XL'
 
     },
     
@@ -78,7 +80,8 @@ const productsData=[
         qty:1,
         prodTitle:'X Y Z',
         price:900 ,
-        category:['specials','featured','most viewed']
+        category:['specials','featured','most viewed'],
+        size:'M'
 
     },
     {
@@ -87,7 +90,9 @@ const productsData=[
         qty:1,
         prodTitle:'X Y Z',
         price:450 ,
-        category:['best seller','featured','most viewed']
+        category:['best seller','featured','most viewed'],
+        size:'M'
+
 
     },
     {
@@ -96,7 +101,9 @@ const productsData=[
         qty:1,
         prodTitle:'X Y Z',
         price:1000 ,
-        category:['best seller','specials','featured']
+        category:['best seller','specials','featured'],
+        size:'S'
+
 
     },
     {
@@ -105,7 +112,9 @@ const productsData=[
         qty:1,
         prodTitle:'X Y Z',
         price:900 ,
-        category:['best seller','featured','new arrivals']
+        category:['best seller','featured','new arrivals'],
+        size:'XL'
+
 
     },
     {
@@ -114,7 +123,9 @@ const productsData=[
         qty:1,
         prodTitle:'X Y Z',
         price:1000 ,
-        category:['featured','best seller']
+        category:['featured','best seller'],
+        size:'S'
+
 
     },
     {
@@ -123,7 +134,9 @@ const productsData=[
         qty:1,
         prodTitle:'X Y Z',
         price:800 ,
-        category:['featured','specials','new arrivals']
+        category:['featured','specials','new arrivals'],
+        size:'S'
+
 
     },
     {
@@ -132,7 +145,9 @@ const productsData=[
         qty:1,
         prodTitle:'X Y Z',
         price:1100 ,
-        category:['most viewed','featured','specials']
+        category:['most viewed','featured','specials'],
+        size:'M'
+
 
     },
     {
@@ -141,7 +156,9 @@ const productsData=[
         qty:1,
         prodTitle:'X Y Z',
         price:1200 ,
-        category:['most viewed','best seller','new arrivals']
+        category:['most viewed','best seller','new arrivals'],
+        size:'XXL'
+
 
     },
 ]
@@ -155,6 +172,8 @@ export const  menProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'M'
+
     },
     {
         id:12,
@@ -162,6 +181,8 @@ export const  menProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'S'
+
     },
     {
         id:13,
@@ -169,6 +190,8 @@ export const  menProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'M'
+
     },
     {
         id:14,
@@ -176,6 +199,8 @@ export const  menProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'S'
+
     },
     {
         id:15,
@@ -183,6 +208,8 @@ export const  menProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'XL'
+
     },
     {
         id:16,
@@ -190,6 +217,8 @@ export const  menProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'X'
+
     },
     {
         id:17,
@@ -197,6 +226,8 @@ export const  menProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'M'
+
     },
     {
         id:18,
@@ -204,6 +235,8 @@ export const  menProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'S'
+
     },
     {
         id:19,
@@ -211,6 +244,8 @@ export const  menProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'XL'
+
     },
 ]
 
@@ -223,6 +258,8 @@ export const  womenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'XL'
+
     },
     {
         id:21,
@@ -230,6 +267,8 @@ export const  womenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'M'
+
     },
     {
         id:22,
@@ -237,6 +276,8 @@ export const  womenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'S'
+
     },
     {
         id:23,
@@ -244,6 +285,8 @@ export const  womenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'XL'
+
     },
     {
         id:24,
@@ -251,6 +294,8 @@ export const  womenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'2XL'
+
     },
     {
         id:25,
@@ -258,6 +303,8 @@ export const  womenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'M'
+
     },
     {
         id:26,
@@ -265,6 +312,8 @@ export const  womenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'XL'
+
     },
     {
         id:27,
@@ -272,6 +321,8 @@ export const  womenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'S'
+
     },
     {
         id:28,
@@ -279,6 +330,8 @@ export const  womenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'XL'
+
     },
     {
         id:29,
@@ -286,6 +339,8 @@ export const  womenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'XL'
+
     },
     {
         id:30,
@@ -293,6 +348,8 @@ export const  womenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'M'
+
     },
     {
         id:31,
@@ -300,6 +357,8 @@ export const  womenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'M'
+
     },
     {
         id:32,
@@ -307,6 +366,8 @@ export const  womenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'M'
+
     },
 ]
 
@@ -317,6 +378,8 @@ export const childrenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'M'
+
     },
     {
         id:34,
@@ -324,6 +387,8 @@ export const childrenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'S'
+
     },
     {
         id:35,
@@ -331,6 +396,8 @@ export const childrenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'M'
+
     },
     {
         id:36,
@@ -338,6 +405,8 @@ export const childrenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'S'
+
     },
     {
         id:37,
@@ -345,6 +414,8 @@ export const childrenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'S'
+
     },
     {
         id:38,
@@ -352,6 +423,8 @@ export const childrenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'S'
+
     },
     {
         id:39,
@@ -359,6 +432,8 @@ export const childrenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'S'
+
     },
     {
         id:40,
@@ -366,6 +441,8 @@ export const childrenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'M'
+
     },
     {
         id:41,
@@ -373,6 +450,8 @@ export const childrenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'S'
+
     },
     {
         id:42,
@@ -380,6 +459,8 @@ export const childrenProducts=[
         qty:1,
         prodTitle:'X Y Z',
         price:500 ,
+        size:'M'
+
     },
 ]
 

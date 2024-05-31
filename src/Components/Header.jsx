@@ -79,13 +79,7 @@ function Header() {
             }
     
           </Carousel>
-{/* 
-          <div>
-            <Typography>
-              HIGHEST QUALITY COLLECTIONS
-            </Typography>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit numquam eligendi voluptatum, qui reprehenderit dolorem atque iusto esse officia magni aperiam hic ipsam dolore quis possimus quaerat temporibus quasi. Soluta?</p>
-          </div> */}
+
         
       
     

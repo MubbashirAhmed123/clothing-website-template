@@ -1,9 +1,11 @@
 import React from 'react'
-import{CartFooter,Typography, Card, CardHeader, CardBody, CardFooter, Button} from '@material-tailwind/react'
+import{Typography, Card, CardHeader, CardBody, CardFooter, Button} from '@material-tailwind/react'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../store/cartReducers'
+import { IoDiscOutline } from 'react-icons/io5'
+import { RiDiscountPercentFill } from 'react-icons/ri'
 
 function Product({product,index}) {
 
@@ -19,22 +21,29 @@ function Product({product,index}) {
 
   return (
     <>
-   <motion.div initial={{y:100,opacity:0}}  whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{delay:0.5, duration:0.5}} className='cursor-pointer'>
+   <motion.div initial={{y:100,opacity:0}}  whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{delay:0.5, duration:0.5}} >
     
-    <Card  className='h-[300px] w-[300px] bg-gray-200 shadow-md shadow-black'  >
-        <CardHeader color='blue-gray' className='hover:scale-110 transition' onClick={()=>showProduct(product.id)}>
+    <Card  className='h-[400px] w-[300px] bg-gray-200 shadow-md shadow-black'  >
+        <CardHeader color='blue-gray' className=' hover:scale-110 transition cursor-pointer ' onClick={()=>showProduct(product.id)}>
         <img src={product.prodImg} alt="" className='w-full h-full object-cover rounded-md' />
         </CardHeader>
-        <CardBody>
-            <Typography className='font-bold'>
+        <CardBody className='flex justify-between gap-x-5 flex-wrap '>
+            <Typography className='font-bold  font-[]'>
                Title: {product.prodTitle}
             </Typography>
-            <Typography className='font-semibold'>
+            <Typography className='font-semibold  font-[]'>
                Price: {product.price}
             </Typography>
+            <Typography className='font-semibold  font-[]'>
+                Size:  {product.size}
+            </Typography>
+            <Typography className='font-semibold flex items-center  font-[]'>
+                Discount:  {product.price} <RiDiscountPercentFill/>
+            </Typography>
+           
         </CardBody>
         <CardFooter>
-            <Button color='light-blue' onClick={()=>dispatch(addToCart(product.id))}>Add To Cart</Button>
+            <Button color='light-blue' className=' font-[]' onClick={()=>dispatch(addToCart(product.id))}>Add To Cart</Button>
         </CardFooter>
     </Card>
     </motion.div>

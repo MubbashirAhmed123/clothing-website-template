@@ -19,7 +19,7 @@ export default function Nav() {
   return (
     <Navbar className="mx-auto sticky top-0 z-10  py-2 px-4 lg:px-8 lg:py-4 bg-white shadow-md mb-5">
       <div className="container mx-auto flex justify-between items-center">
-        <Typography as="Link"  variant="h5" className="mr-4 cursor-pointer py-1.5 text-black" >
+        <Typography as="Link"  variant="h5" className="mr-4 cursor-pointer py-1.5 text-black font-[]" >
           <Link to='/'>Clothing Brand</Link>
         </Typography>
         <div className="hidden md:flex gap-6">
@@ -50,8 +50,8 @@ export default function Nav() {
             {openNav ? <FaTimes size={25} /> : <FaBars size={25} />}
         </Button>
       </div>
-      <Collapse open={openNav} className="md:hidden ">
-        <Card className="flex flex-col gap-2 mt-2 list-none">
+      <Collapse open={openNav} className="md:hidden fixed left-0  ">
+        <Card  className="flex flex-col gap-2 mt-2 list-none p-5  ">
           <li>
             <Link to='/'  className="flex items-center text-gray-700 hover:text-gray-900 transition-colors">
               <FaHome className="mr-2" />

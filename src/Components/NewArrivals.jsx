@@ -6,7 +6,7 @@ function NewArrivals({filterProducts}) {
     <main>
         <div className='flex justify-center  mt-10'>
             
-                <List className='flex flex-row flex-wrap justify-center  gap-10 text-black '>
+                <List className='flex flex-row flex-wrap justify-center  gap-10 text-black  font-[]'>
                 <ListItem  selected  onClick={()=>filterProducts('ALL')} className=" w-fit bg-gray-400">ALL</ListItem>
                     <ListItem onClick={()=>filterProducts('NEW ARRIVALS')}    className=" w-fit">NEW ARRIVALS</ListItem>
                     <ListItem onClick={()=>filterProducts('SPECIALS')} className=" w-fit">SPECIALS</ListItem>

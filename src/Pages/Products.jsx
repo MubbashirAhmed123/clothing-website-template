@@ -22,7 +22,7 @@ function Products() {
     <>
     <NewArrivals filterProducts={filterProducts}/>
 
-    <motion.div className='mt-10 flex flex-wrap justify-center gap-x-10 gap-y-20 ' >
+    <motion.div className='mt-10 flex flex-wrap justify-center gap-x-10 gap-y-20  ' >
       {
         prodsData.map((p,i)=>(
           <Product product={p} index={i}/>
@@ -30,7 +30,7 @@ function Products() {
       }
     </motion.div>
 
-    <div className=' mt-10 '>
+    <div className=' mt-10  '>
       <List>
       <ListItem className=''>
         Men section
