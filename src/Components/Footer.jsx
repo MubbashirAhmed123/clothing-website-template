@@ -27,21 +27,21 @@ function Footer() {
                 <div className='flex justify-center gap-10 mt-5'>
 
                 <Typography >
-                   <a href="https://www.google.com" target='_blank' > <FaFacebook size={20} /></a>
+                   <a href="#" target='_blank' > <FaFacebook size={20} /></a>
                 </Typography>
                 <Typography>
-                    <a href=""><FaTwitter size={20}  /></a>
+                    <a href="#"><FaTwitter size={20}  /></a>
                 </Typography>
                 <Typography>
-                   <a href=""> <FaGithub size={20} /></a>
+                   <a href="#"> <FaGithub size={20} /></a>
 
                 </Typography>
                 <Typography>
-                    <a href=""><FaInstagram size={20} /></a>
+                    <a href="#"><FaInstagram size={20} /></a>
 
                 </Typography>
                 <Typography>
-                    <a href=""><TbWorld size={20} /></a>
+                    <a href="#"><TbWorld size={20} /></a>
 
                 </Typography>
                 </div>
