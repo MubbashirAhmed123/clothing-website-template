@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-         background-color: rgba(217, 246, 251, 0.902);
+        background-color: rgba(217, 246, 251, 0.902);
         font-family: "Sriracha", cursive;
         font-weight: 400;
         font-style: normal;

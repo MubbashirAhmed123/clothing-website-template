@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Carousel, Typography } from '@material-tailwind/react';
+import { Button, Carousel, Typography } from '@material-tailwind/react';
 import { motion } from 'framer-motion';
 import bg1 from "../assets/bg_img/bg4.jpg"
 import bg2 from "../assets/bg_img/bg2.jpg"
@@ -67,25 +67,39 @@ function Header() {
     ]
     return (
  <>
-      <motion.div className=" relative w-full max-w-6xl mx-auto flex" initial={{x:-100,opacity:0}} animate={{x:0,opacity:1}} transition={{ease:'easeInOut', duration:0.7,delay:0.5}}>
+      <motion.div className=" relative w-full max-w-6xl mx-auto flex bg-black" initial={{x:-100,opacity:0}} animate={{x:0,opacity:1}} transition={{ease:'easeInOut', duration:0.7,delay:0.5}}>
       
      
-          <Carousel  autoplay  className='w-full h-[600px] ' color='blue' style={{color:'black'}} >
+          <Carousel  autoplay  className='w-full h-[600px] opacity-60 ' color='blue' style={{color:'black'}} >
             {
               slides.map((img)=>(
-                <img src={img.img} alt="" className='h-full w-full  object-cover  ' />
+                <img src={img.img} alt="" className='h-full w-full  object-cover   ' />
 
               ))
             }
     
           </Carousel>
 
+          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white' >
+            
+            <motion.div initial={{opacity:0,scale:0}} whileInView={{opacity:1,scale:1}} transition={{delay:1,duration:0.5, ease:'easeInOut'}} >
+            <p className='text-7xl'>Lorem ipsum dolor sit amet consectetur</p>
+            <Button className='mt-3'>SHOP NOW</Button>
+            </motion.div>
+
+          </div>
+
         
       
     
     </motion.div>
 
-    <motion.main className='mt-20 flex justify-center gap-10 flex-wrap gap-y-5' initial={{scale:0,opacity:0}} whileInView={{scale:1,opacity:1}} transition={{duration:0.5,delay:0.5,ease:'easeInOut'}}>
+<div className='container mx-auto mt-5'>
+<h1 className='text-3xl '>PRODUCTS OVERVIEW</h1>
+
+</div>
+
+    <motion.main className='mt-10 flex justify-center gap-10 flex-wrap gap-y-5' initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:1,delay:0.5,ease:'easeInOut'}}>
       {
 
         categories.map((img,i)=>(

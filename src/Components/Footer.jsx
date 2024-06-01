@@ -3,6 +3,7 @@ import React from 'react'
 import { CgWebsite } from 'react-icons/cg'
 import { FaFacebook, FaGithub, FaInstagram, FaTwitter } from 'react-icons/fa'
 import { TbWorld } from 'react-icons/tb'
+import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
@@ -11,18 +12,18 @@ function Footer() {
                 <ul className='flex gap-10 p-2'>
                     <li>
                         <Typography>
-                            About Us
+                            <Link to='/about'>About Us</Link>
                         </Typography>
                     </li>
                     <li>
                         <Typography>
-                            Contact Us
+                            <Link to='/contact'>Contact Us</Link>
                         </Typography>
                     </li>
                 </ul>
                 <hr className='h-[1.5px] bg-black' />
                 <Typography className='text-center mt-3'>
-                    &copy; 2024 Falcon org. All Rights Reserved.
+                    &copy; 2024 Falcon.org All Rights Reserved.
                 </Typography>
                 <div className='flex justify-center gap-10 mt-5'>
 

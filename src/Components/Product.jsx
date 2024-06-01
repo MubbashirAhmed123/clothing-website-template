@@ -24,8 +24,8 @@ function Product({product,index}) {
    <motion.div initial={{y:100,opacity:0}}  whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{delay:0.5, duration:0.5}} >
     
     <Card  className='h-[400px] w-[300px] bg-gray-200 shadow-md shadow-black'  >
-        <CardHeader color='blue-gray' className=' hover:scale-110 transition cursor-pointer ' onClick={()=>showProduct(product.id)}>
-        <img src={product.prodImg} alt="" className='w-full h-full object-cover rounded-md' />
+        <CardHeader  className=' hover:scale-110 transition cursor-pointer ' onClick={()=>showProduct(product.id)}>
+        <img src={product.prodImg} alt="" className='h-full w-full object-cover rounded-md' />
         </CardHeader>
         <CardBody className='flex justify-between gap-x-5 flex-wrap '>
             <Typography className='font-bold  font-[]'>
@@ -37,13 +37,11 @@ function Product({product,index}) {
             <Typography className='font-semibold  font-[]'>
                 Size:  {product.size}
             </Typography>
-            <Typography className='font-semibold flex items-center  font-[]'>
-                Discount:  {product.price} <RiDiscountPercentFill/>
-            </Typography>
+           
            
         </CardBody>
         <CardFooter>
-            <Button color='light-blue' className=' font-[]' onClick={()=>dispatch(addToCart(product.id))}>Add To Cart</Button>
+            <Button color='' className=' ' onClick={()=>dispatch(addToCart(product.id))}>Add To Cart</Button>
         </CardFooter>
     </Card>
     </motion.div>

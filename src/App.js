@@ -10,6 +10,8 @@ import SingleProduct from './Pages/SingleProduct';
 import { ToastContainer } from 'react-toastify';
 import Signup from './Pages/Signup';
 import SignIn from './Pages/SignIn';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
 
 
 
@@ -28,6 +30,8 @@ function App() {
         <Route path='/cart' element={<ProductCart/>}/>
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/login' element={<SignIn/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/contact' element={<Contact/>}/>
       </Routes>
 
     </>

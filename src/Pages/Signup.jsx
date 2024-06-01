@@ -33,7 +33,7 @@ const Signup = () => {
       <Card className="w-full max-w-sm ">
         <CardHeader color="blue-gray" className="text-center">
           <Typography variant="h4" color="white" >
-            Sign Up
+            Create Account
           </Typography>
         </CardHeader>
         <form onSubmit={handleSubmit}>
@@ -81,7 +81,7 @@ const Signup = () => {
           </CardBody>
           <CardFooter className="text-center">
             <Button color="black" type="submit" fullWidth>
-              Sign Up
+              Register
             </Button>
             <Typography>
               have an account ? <Link to='/login' className='font-bold'>login</Link>

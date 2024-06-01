@@ -41,9 +41,7 @@ const SingleProduct = () => {
           <Typography variant="h4" color="green" className="mt-4  font-[]">
             Size: {product.size}
           </Typography>
-          <Typography variant="h4" color="green" className="mt-4  font-[] flex items-center ">
-            Discount: {product.price} <RiDiscountPercentFill/>
-          </Typography>
+          
           <div className="mt-6 flex space-x-2">
             <Button color="green" size="lg" className=' font-[]' onClick={()=>dispatch(addToCart(product.id))}>
               Add to Cart

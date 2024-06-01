@@ -33,7 +33,7 @@ const ProductCart = () => {
             <Typography className='font-semibold'>{item.prodTitle}</Typography>
             <Typography className='font-semibold'>RS {item.price}.00</Typography>
             <Typography className='font-semibold'>Size: {item.size}</Typography>
-            <Typography className='font-semibold flex items-center'>Discount: {item.price} <RiDiscountPercentFill/> </Typography>
+            
             </div>
             <div className='mt-5 flex items-center gap-5 sm:mt-0'>
               <Button onClick={()=>dispatch(increaseQty(item.id))}>+</Button>
