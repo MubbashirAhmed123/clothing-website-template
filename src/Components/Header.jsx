@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Carousel, Typography } from '@material-tailwind/react';
+import { Button, Carousel, List, ListItem, Typography } from '@material-tailwind/react';
 import { motion } from 'framer-motion';
 import bg1 from "../assets/bg_img/bg4.jpg"
 import bg2 from "../assets/bg_img/bg2.jpg"
@@ -11,6 +11,7 @@ import img2 from '../assets/women_img/wimg16.jpg'
 
 import img3 from '../assets/children_img/chimg11.jpg'
 import Card from './Card';
+import { Link } from 'react-router-dom';
 
 function Header() {
 
@@ -96,10 +97,15 @@ function Header() {
 
 <div className='container mx-auto mt-5'>
 <h1 className='text-3xl '>PRODUCTS OVERVIEW</h1>
+<ul className='mt-3 flex justify-center gap-10'>
+<li><Link to='/products'>MEN</Link></li>
+<li><Link to='/products'>WOMEN</Link></li>
+<li><Link to='/products'>CHILDREN</Link></li>
+</ul>
 
 </div>
 
-    <motion.main className='mt-10 flex justify-center gap-10 flex-wrap gap-y-5' initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:1,delay:0.5,ease:'easeInOut'}}>
+    <motion.main className='mt-10 flex justify-center gap-10 flex-wrap gap-y-5' initial={{opacity:0,scale:0}} whileInView={{opacity:1,scale:1}} transition={{duration:1,delay:0.5,ease:'easeInOut'}}>
       {
 
         categories.map((img,i)=>(
